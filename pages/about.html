@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- With the clicling the button function "openBar" is called
+and it finds id sidebar and it changes the "left". Read js file. -->
+  <div class="button-open" onclick="openBar()">
+    <!--  It's an icon tag imported from fontawesomlibrary.com-->
+    <i class="fas fa-bars"></i>
+  </div>
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <!-- With the clicling the button function "closeBar" is called
+  and it finds id sidebar and it changes the "left" . Read js file. -->
+  <!-- &times - it's a cross. -->
+    <div class="button-close" onclick="closeBar()">&times;</div>
+    <nav>
+      <a class="text-element" href="../index.html">Main</a>
+      <a class="text-element" href="activities.html">Activities</a>
+      <a class="text-element" href="sceneries.html">Sceneries</a>
+      <a class="text-element" href="parties.html">Parties</a>
+      <a class="text-element" href="weddings.html">Weddings</a>
+      <a class="text-element" href="styling.html">Styling</a>
+      <a class="text-element" href="family.html">Family</a>
+      <a class="text-element" href="about.html">About</a>
+      <a class="text-element" href="contacts.html">Contacts</a>
+    </nav>
+  </div>
+
+  <header>
+      <!-- <button id="lang-english" class="language-button" onclick="switchLanguage('en')">English</button>
+      <button id="lang-spanish" class="language-button" onclick="switchLanguage('sp')">Español</button> -->
+      <a href="../index.html">
+        <div class="headertext">
+          <h1 class="text-element">Photography site</h1>
+          <h2 class="text-element">Fill your life with memories!</h2>
+        </div>
+      </a>
+  </header>
+
+<div class="page">
+
+  <span id="icons-animation"><img src="../images/camera.png"></span>
+
+  <div class="page-title">
+    <h1 class="text-element">About</h1>
+  </div>
+  <div class="page-text">
+    I have been a full-time professional photographer for 7 years and provided many families lasting and beautiful memories through my photographs. Family references are available upon request. My corporate clients include Hamilton College, NBT Bank, Paragon Racquet and Athletic Club, Pratt and Whitney and the University of Pennsylvania. I am a member of Nikon Professional Services and the Professional Photographers of America.
+  </div>
+
+  <div class="page-images">
+    <!-- This video is taken from Youtube -->
+    <iframe src="https://www.youtube.com/embed/7gMmPNA_QJU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <ul class="page-list">
+      <li class="text-element">Sport activities</li>
+      <li class="text-element">Family photos</li>
+      <li class="text-element">Parties pics</li>
+      <li class="text-element">Styling photos</li>
+      <li class="text-element">Weddings Pics</li>
+      <li class="text-element">Sceneries</li>
+    </ul>
+  </div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

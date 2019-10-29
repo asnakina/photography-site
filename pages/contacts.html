@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contacts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- With the clicling the button function "openBar" is called
+  and it finds id sidebar and it changes the "left". Read js file. -->
+    <div class="button-open" onclick="openBar()">
+       <!--  It's an icon tag imported from fontawesomlibrary.com-->
+      <i class="fas fa-bars"></i>
+    </div>
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <!-- With the clicling the button function "closeBar" is called
+    and it finds id sidebar and it changes the left . Read js file. -->
+    <!-- &times - it's a cross. -->
+      <div class="button-close" onclick="closeBar()">&times;</div>
+      <nav>
+        <a class="text-element" href="../index.html">Main</a>
+        <a class="text-element" href="activities.html">Activities</a>
+        <a class="text-element" href="sceneries.html">Sceneries</a>
+        <a class="text-element" href="parties.html">Parties</a>
+        <a class="text-element" href="weddings.html">Weddings</a>
+        <a class="text-element" href="styling.html">Styling</a>
+        <a class="text-element" href="family.html">Family</a>
+        <a class="text-element" href="about.html">About</a>
+        <a class="text-element" href="contacts.html">Contacts</a>
+      </nav>
+    </div>
+
+    <header>
+        <!-- <button id="lang-english" class="language-button" onclick="switchLanguage('en')">English</button>
+        <button id="lang-spanish" class="language-button" onclick="switchLanguage('sp')">Español</button> -->
+        <a href="../index.html">
+          <div class="headertext">
+            <h1 class="text-element">Photography site</h1>
+            <h2 class="text-element">Fill your life with memories!</h2>
+          </div>
+        </a>
+    </header>
+
+  <div class="page">
+
+    <div class="page-title">
+      <h1 class="text-element">Contacts</h1>
+    </div>
+    <div class="page-text">
+      <p>We would like to hear from you.</p>
+      <p>Our office location: 88 Lafayette St, Manhattan, 10013.</p>
+      <p>You can contact me via email or through phone: 917-473-3571</p>
+      <p>And you can contact me on social media<p>
+      <a href="https://www.facebook.com/"><img src="../images/fb.png"></a>
+      <a href="https://www.instagram.com/?hl=en"><img src="../images/instagram.png"></a>
+    </div>
+
+    <div class="page-images">
+      <img class="page-img" src="../images/cont1.jpg"></img>
+      <img class="page-img" src="../images/cont2.jpg"></img>
+      <img class="page-img" src="../images/cont3.jpg"></img>
+      <img class="page-img" src="../images/cont4.jpg"></img>
+      <img class="page-img" src="../images/cont5.jpg"></img>
+      <img class="page-img" src="../images/cont6.jpg"></img>
+    </div>
+<!-- When we click the button it leads to the execution of openForm function.
+It's a name of the function. It's a function variable, points to the function.
+It takes all document and finds element
+with id "modal" and set style "visible" for the property "visibility".
+Though before in css page "visibility" equaled "hidden"".  -->
+    <button id="request-button" onclick="openForm()"><span class="text-element">Send Request</span></button>
+  </div>
+
+  <div id="modal">
+
+    <div class="request-form">
+      <!-- When we click the button it leads to the execution of closeForm function.
+      It's a name of the function. It's a function variable, points to the function.
+      It takes all document and finds element
+      with id "modal" and set style "hidden" for the property "visibility".
+      Though before in css page "visibility" equaled "visible".
+    &times - it's a cross-->
+      <div class="close-form" onclick="closeForm()">&times;</div>
+      <div id="request-form" class="form">
+        <div>
+          Name
+          <input class="form-input"></input>
+        </div>
+        <div>
+          Phone
+          <input class="form-input"></input>
+        </div>
+        <div>
+          Your Message
+          <textarea class="form-input"></textarea>
+        </div>
+        <!-- When we click the button it leads to the execution of closeForm function.
+        It's a name of the function. It's a function variable, points to the function.
+        It takes all document and finds element
+        with id "modal" and set style "hidden" for the property "visibility".
+        Though before in css page "visibility" equaled "visible".  -->
+        <button class="form-btn" onclick="closeForm()">Send</button>
+      </div>
+    </div>
+  </div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
