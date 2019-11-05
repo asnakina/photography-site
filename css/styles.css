@@ -110,6 +110,7 @@ header {
   height: 500px;
   flex:1;
   z-index: 10;
+  object-fit: cover;
 }
 
                              /* Class for i tag */
